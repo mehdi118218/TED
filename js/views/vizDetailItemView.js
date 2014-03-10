@@ -5,8 +5,8 @@ function(template){
 		 el: '#content',
 		 template: _.template(template),
                  events: {
-                     "click #showDash": "showDash",
-                     "click #overlay": "hideDash"
+                     //"click #showDash": "showDash",
+                     "click #showDash": "hideDash"
 		    },
 		initialize: function(){
 
@@ -21,6 +21,7 @@ function(template){
 		 this.$el.html(this.template(this.model.attributes));
                    this.map = L.mapbox.map('map', this.model.get("map"))
                   .setView([34.5, 10.7], 7);
+                  this.showDash();
 
                  return this;
                
@@ -29,10 +30,13 @@ function(template){
                 var showDashButton=document.getElementById( 'showDash' ),
                   mapZone=document.getElementById( 'viz-detail' ),
                   descriptionDash=document.getElementById('description-dash');
+                  
                   $('#description-dash').addClass("dash-right-open");
+                  //$('#showDash').removeClass("showdash-right");
                   $('#showDash').hide();
-                  $("#overlay").addClass("overlay_bk");
+                  //$("#overlay").addClass("overlay_bk");
                   },
+
                 hideDash: function() {
                  console.log("description dash clicked by event");
                  var showDashButton=document.getElementById( 'showDash' ),
@@ -41,8 +45,9 @@ function(template){
                  //  $('#viz-detail').removeClass("dash-right-push-toleft");
                    $('#description-dash').removeClass("dash-right-open");
 
+                    $('#showDash').addClass("showdash-right");
                     $('#showDash').show();
-                $("#overlay").removeClass("overlay_bk");
+               // $("#overlay").removeClass("overlay_bk");
                 }
               
 	});

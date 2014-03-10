@@ -590,13 +590,14 @@ transition: all .3s;
 #e_2011 {
     padding-top: 100px;
 }
+
 #showdash {
 	color: white;
 	font-size: 15px;
 	font-weight: bolder;
-	margin-right: 60px;
+	margin-right: 160px;
 	position: fixed;
-	top: 100px;
+	top: 75px;
 	z-index: 99;
 	right: 20px;
 	background-color:#CD2122;
@@ -604,11 +605,15 @@ transition: all .3s;
         width: 110px;
         text-align: center;
 }
+
+
+
+
 /* nav side menu */ 
 
 /* General styles for all menus */
 .dash-right {
-	background: #1abc9c;
+	background: #2f4356;
 	position: fixed;
 }
 .dash-right-right {
@@ -623,18 +628,27 @@ transition: all .3s;
 }
 .dash-right {
     color:white;
-    background: none repeat scroll 0 0 #1ABC9C;
+    background: none repeat scroll 0 0 #2f4356;
     position: fixed;
     padding: 70px 30px;
     overflow-y:scroll;
 }
 .dash-right h3 {
-    background: none repeat scroll 0 0 #16A085;
+    background: none repeat scroll 0 0 #000000;
     color: #ECF0F1;
     font-size: 1.9em;
     font-weight: 300;
     padding: 4px;
 }
+
+
+.dash-right h4 {
+    
+    color: #FFF;
+    font-size: 1em;
+    padding: 4px;
+}
+
 .dash-right p { 
     color: #FFF;
 }
