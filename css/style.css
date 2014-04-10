@@ -216,6 +216,7 @@ a:hover {
 	background: #242424;
 	color: #e1e1e1;
 	line-height: 1.4em;
+	z-index: 99999999999;
 }
 #footer-inner {
 	padding: 30px 0px 30px 0px;
@@ -607,7 +608,35 @@ transition: all .3s;
 }
 
 
+#back {
+	color: white;
+	font-size: 15px;
+	font-weight: bolder;
+	margin-right: 160px;
+	position: fixed;
+	top: 75px;
+	z-index: 99;
+	right: 330px;
+	background-color:#CD2122;
+	padding: 10px 10px 10px;
+        width: 100px;
+        text-align: center;
+}
 
+#download {
+	color: white;
+	font-size: 15px;
+	font-weight: bolder;
+	margin-right: 160px;
+	position: fixed;
+	bottom: 15px;
+	z-index: 999999999999;
+	right: 350px;
+	background-color:#CD2122;
+	padding: 10px 10px 10px;
+        width: 200px;
+        text-align: center;
+}
 
 /* nav side menu */ 
 
