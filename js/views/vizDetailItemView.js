@@ -20,7 +20,8 @@ function(template){
                   $(this.el).empty();
 		 this.$el.html(this.template(this.model.attributes));
                    this.map = L.mapbox.map('map', this.model.get("map"))
-                  .setView([34.5, 10.7], 7);
+                  .setView([34.5, 10.7], 7)
+                  .addControl(L.mapbox.shareControl());
                   this.showDash();
 
                  return this;
